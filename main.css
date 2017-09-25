@@ -1,3 +1,261 @@
-h1 {
-    color: red;
+.center {
+    background:    lightgrey;
+    width: 100%;
+    /*Вирівнює елемент по центру*/
+    margin:    10%;
+    /*Ширина екрану після якої з’являться
+    поля*/
+    max-width: 75%;
+}
+.right {
+    width: 25%;
+    height: 230px;
+    background-color:  white;
+    float: right;
+    padding:   10px;
+}
+.left  {
+    width: 53%;
+    height: 250px;
+    background-color:  white;
+    padding:   10px;
+    margin-left:120px;
+}
+
+.text1 {
+    width: 650px;
+    height: 30px;
+    float: left;
+    padding: 5px;
+}
+
+.button1 {
+    width:100px;
+    height: 45px;
+    color: white;
+    background-color: blue;
+    border:darkblue;
+    font-weight: bold;
+}
+
+.style{
+    font-size: larger;
+    font-weight: bolder;
+    margin:15px;
+}
+
+.button2 {
+    background-color: red;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    outline:none;
+    border:red;
+    margin-left:220px;
+    font-weight: bold;
+}
+
+.text2{
+    background-color: lightgrey;
+    width:30px;
+    height:30px;
+    text-align: center;
+    border-radius: 5px;
+    outline:none;
+    border: lightgrey;
+}
+
+.button3{
+    background-color: green;
+    color:white;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    outline:none;
+    border: green;
+    font-weight: bold;
+}
+
+.button4{
+    background-color: lightgrey;
+    border-radius: 5px;
+    outline:none;
+    margin-left:240px;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+}
+
+.button5{
+    margin:20px;
+    background-color: red;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    outline:none;
+    border:red;
+    font-weight: bold;
+
+}
+
+.button6 {
+    background-color: red;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    outline:none;
+    border:red;
+    margin-left:238px;
+    font-weight: bold;
+}
+
+.text3{
+    background-color: lightgrey;
+    width:30px;
+    height:30px;
+    text-align: center;
+    border-radius: 5px;
+    outline:none;
+    border: lightgrey;
+}
+
+.button7{
+    background-color: green;
+    color:white;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    outline:none;
+    border: green;
+    font-weight: bold;
+
+}
+
+.button8{
+    background-color: lightgrey;
+    border-radius: 5px;
+    outline:none;
+    margin-left:238px;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+}
+
+.button9{
+    margin:20px;
+    background-color: red;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    outline:none;
+    border:red;
+    font-weight: bold;
+}
+
+.button10 {
+    background-color: red;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    outline:none;
+    border:red;
+    margin-left:260px;
+    font-weight: bold;
+
+}
+
+.text4{
+    background-color: lightgrey;
+    width:30px;
+    height:30px;
+    text-align: center;
+    border-radius: 5px;
+    outline:none;
+    border: lightgrey;
+}
+
+.button11{
+    background-color: green;
+    color:white;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    outline:none;
+    border: green;
+    font-weight: bold;
+}
+
+.button12{
+    background-color: lightgrey;
+    border-radius: 5px;
+    outline:none;
+    margin-left:238px;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+}
+
+.button13{
+    margin:20px;
+    background-color: red;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    outline:none;
+    border:red;
+    font-weight: bold;
+}
+
+.style{
+    font-size: large;
+    margin-top:15px;
+    font-weight:bold;
+    font-family: "Arial";
+}
+
+.style1{
+    font-size: large;
+    margin-top:40px;
+    font-weight:bold;
+    font-family: "Arial";
+    margin-left: 15px;
+}
+
+.text5{
+    background-color: lightgrey;
+    width:70px;
+    height:30px;
+    text-align: center;
+    border-radius: 5px;
+    outline:none;
+    border: lightgrey;
+    margin-top:20px;
+
+}
+
+.text6{
+    background-color: lightgrey;
+    width:60px;
+    height:30px;
+    text-align: center;
+    border-radius: 5px;
+    outline:none;
+    border: lightgrey;
+    margin-left: 20px;
+}
+.text7{
+    background-color: lightgrey;
+    width:50px;
+    height:30px;
+    text-align: center;
+    border-radius: 5px;
+    outline:none;
+    border: lightgrey;
+    margin-left: 20px;
 }

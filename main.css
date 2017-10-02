@@ -1,261 +1,306 @@
-.center {
-    background:    lightgrey;
-    width: 100%;
-    /*Вирівнює елемент по центру*/
-    margin:    10%;
-    /*Ширина екрану після якої з’являться
-    поля*/
-    max-width: 75%;
+body {
+    margin: 0;
+    background: lightgrey;
+    font-family: Lato, Arial, sans-serif;
+
 }
-.right {
-    width: 25%;
-    height: 230px;
-    background-color:  white;
+
+.main_container {
+    display: block;
+    max-width: 1100px;
+    min-width: 500px;
+    padding-top: 100px;
+    margin:auto;
+}
+
+.right_container {
+    box-sizing: border-box;
+    width: 40%;
     float: right;
-    padding:   10px;
-}
-.left  {
-    width: 53%;
-    height: 250px;
-    background-color:  white;
-    padding:   10px;
-    margin-left:120px;
+    padding: 10px;
 }
 
-.text1 {
-    width: 650px;
-    height: 30px;
+.left_container {
+    box-sizing: border-box;
+    width: 60%;
     float: left;
+    padding: 10px;
+    box-shadow: aliceblue;
+}
+
+.container-list {
+    width: 100px;
+    background: white;
     padding: 5px;
+
 }
 
-.button1 {
-    width:100px;
-    height: 45px;
-    color: white;
-    background-color: blue;
-    border:darkblue;
-    font-weight: bold;
+.inner {
+    background: white;
+    border-radius: 4px;
+    box-shadow: antiquewhite;
 }
 
-.style{
-    font-size: larger;
-    font-weight: bolder;
-    margin:15px;
+.input-holder {
+    padding: 10px;
 }
 
-.button2 {
-    background-color: red;
-    color: white;
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    outline:none;
-    border:red;
-    margin-left:220px;
-    font-weight: bold;
+.input-text {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 80%;
+    padding: 9px;
 }
 
-.text2{
-    background-color: lightgrey;
-    width:30px;
-    height:30px;
+.text{
+    background: lightgrey;
     text-align: center;
-    border-radius: 5px;
-    outline:none;
-    border: lightgrey;
+    padding:5px 10px 5px 10px;
+    position:relative;
+    display:inline-block;
+    border-radius:5px;
+    box-sizing: border-box;
 }
 
-.button3{
-    background-color: green;
+.item {
+    border-top: 1px solid rgb(111, 111, 111);
+    border-bottom: 1px rosybrown;
+}
+
+.item-name {
+    padding: 12px;
+    box-sizing: border-box;
+    width: 25%;
+    display: inline-block;
+    text-align: left;
+}
+
+.item-center-buttons {
+    box-sizing: border-box;
+    width: 37.5%;
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+}
+
+.item-right-buttons {
+    box-sizing: border-box;
+    width: 37.5%;
+    display: inline-block;
+    text-align: right;
+    padding: 0 15px 0 0;
+}
+
+.my-button {
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 -0.25em 0 0 rgba(34,36,38, .15) inset;
+    position: relative;
+    border: none;
+    text-align: center;
+}
+
+.my-button:hover {
+    filter: brightness(85%);
+}
+
+.my-button:active {
+    filter: brightness(75%);
+}
+
+.button-add {
+    display: inline-block;
+    box-sizing: border-box;
     color:white;
+    font-weight: 700;
+    width: 20%;
+    background: #2185D0;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    padding: 11px;
+    float:right;
+}
+
+.round-button {
+    height: 30px;
     width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    outline:none;
-    border: green;
-    font-weight: bold;
-}
-
-.button4{
-    background-color: lightgrey;
-    border-radius: 5px;
-    outline:none;
-    margin-left:240px;
-    width: 80px;
-    height: 30px;
-    text-align: center;
-}
-
-.button5{
-    margin:20px;
-    background-color: red;
+    border-radius: 50%;
     color: white;
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
-    outline:none;
-    border:red;
-    font-weight: bold;
-
+    font-weight: 700;
 }
 
-.button6 {
-    background-color: red;
+.button-minus {
+    background: red;
+}
+
+.button-plus{
+    background: green;
+}
+
+.button-bought{
+    background: #e6e6e6;
+    padding: 10px 20px 10px 20px;
+}
+
+.button-delete{
+    background: #ce0000;
+    border: none;
     color: white;
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    outline:none;
-    border:red;
-    margin-left:238px;
-    font-weight: bold;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: 3px;
+    border-radius: 3px;
+    padding: 5px 10px 5px 10px;
+    font-weight:700;
 }
 
-.text3{
-    background-color: lightgrey;
-    width:30px;
-    height:30px;
-    text-align: center;
-    border-radius: 5px;
-    outline:none;
-    border: lightgrey;
-}
-
-.button7{
-    background-color: green;
-    color:white;
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    outline:none;
-    border: green;
-    font-weight: bold;
-
-}
-
-.button8{
-    background-color: lightgrey;
-    border-radius: 5px;
-    outline:none;
-    margin-left:238px;
-    width: 80px;
-    height: 30px;
-    text-align: center;
-}
-
-.button9{
-    margin:20px;
-    background-color: red;
+.badge {
+    width:150px;
+    height:110px;
+    position: fixed;
+    bottom: -70px;
+    left: 20px;
+    font-size: 15px;
+    background: purple;
     color: white;
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
-    outline:none;
-    border:red;
-    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: all 0.4s ease;
 }
 
-.button10 {
-    background-color: red;
+.b-text
+{
+    font-size: 20px;
+}
+
+.b-title
+{
+    font-size: 25px;
+    padding: 10px;
+    font-weight: 600;
+}
+
+
+.badge:hover {
+    transform: translateY(-70px);
+    background: rebeccapurple;
+}
+
+
+.how-many-left
+{
+    padding: 10px;
+}
+
+.items-list
+{
+    border-top: 1px solid rgb(111, 111, 111);
+    padding: 10px;
+}
+
+.bought-items
+{
+    border-top: 1px solid rgb(111, 111, 111);
+    padding: 10px;
+}
+
+.empty
+{
+    border-top: 1px solid rgb(111, 111, 111);
+    padding: 10px;
+}
+
+.item-not-bought
+{
+    display: inline-block;
+    padding: 5px 7px 5px 7px;
+    border-radius: 3px;
+    background: #eaeaea;
+    font-size: small;
+    margin: 2px;
+}
+
+.orange-circle {
     color: white;
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    outline:none;
-    border:red;
-    margin-left:260px;
-    font-weight: bold;
-
-}
-
-.text4{
-    background-color: lightgrey;
-    width:30px;
-    height:30px;
+    display: inline-block;
+    padding:5px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: orangered;
+    width: 20px;
+    height: 20px;
     text-align: center;
-    border-radius: 5px;
-    outline:none;
-    border: lightgrey;
+    font-size: 10px;
 }
 
-.button11{
-    background-color: green;
-    color:white;
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    outline:none;
-    border: green;
-    font-weight: bold;
+.label
+{
+    display: inline-block;
+}
+.one
+{
+    max-width: 1100px;
+    min-width: 900px;
+    padding: 5px 10px 5px 10px;
+    display: block;
+    color: black;
+    font-size: small;
+    width: 5px !important;
+    height: 5px !important;
+    line-height: 1;
+    vertical-align: baseline;
+    margin: 0 .14285714em;
+    background-color: white;
+    color: rgba(0,0,0,.6);
+    text-transform: none;
+    font-weight: 700;
+    border: 0 solid transparent;
+    border-radius: 3px;
+
 }
 
-.button12{
-    background-color: lightgrey;
-    border-radius: 5px;
-    outline:none;
-    margin-left:238px;
-    width: 80px;
-    height: 30px;
-    text-align: center;
+@media (max-width: 500px) {
+    .left_container {
+        width: 100%;
+    }
+
+    .right_container {
+        width: 100%;
+    }
 }
 
-.button13{
-    margin:20px;
-    background-color: red;
+@media print{
+    .b-title {
+        display: none;
+    }
+
+   .badge{
+       border:solid 1px purple;
+       color:black;
+   }
+}
+
+.tooltip{
+    border-bottom: 1px;
+    transition: all 0.00001s ease;
+}
+.tooltip::after {
+    background: purple;
+    border-radius: 8px 8px 8px 8px;
     color: white;
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
-    outline:none;
-    border:red;
-    font-weight: bold;
+    content: attr(data-tooltip);
+    margin-top: -25px;
+    margin-left: -60px;
+    padding: 3px 7px 3px 7px;
+    position: absolute;
+    visibility: hidden;
 }
 
-.style{
-    font-size: large;
-    margin-top:15px;
-    font-weight:bold;
-    font-family: "Arial";
-}
-
-.style1{
-    font-size: large;
-    margin-top:40px;
-    font-weight:bold;
-    font-family: "Arial";
-    margin-left: 15px;
-}
-
-.text5{
-    background-color: lightgrey;
-    width:70px;
-    height:30px;
-    text-align: center;
-    border-radius: 5px;
-    outline:none;
-    border: lightgrey;
-    margin-top:20px;
-
-}
-
-.text6{
-    background-color: lightgrey;
-    width:60px;
-    height:30px;
-    text-align: center;
-    border-radius: 5px;
-    outline:none;
-    border: lightgrey;
-    margin-left: 20px;
-}
-.text7{
-    background-color: lightgrey;
-    width:50px;
-    height:30px;
-    text-align: center;
-    border-radius: 5px;
-    outline:none;
-    border: lightgrey;
-    margin-left: 20px;
+.tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-2px);
 }

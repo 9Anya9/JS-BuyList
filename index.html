@@ -2,50 +2,120 @@
 <html>
 <head lang="uk">
     <meta charset="UTF-8">
-    <title>My page</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Buy List</title>
+
+
+    <link rel="stylesheet" type="text/css" href="main.css"/>
 </head>
-<body bgcolor= #d3d3d3>
-<div   class="center">
-    <div   class="right">
-        <p class="style"> Залишилося</p>
-        <div>
-            <input type = "text" class = "text5" value="Помідори" disabled>
-            <input type = "text" class = "text6" value="Печиво"disabled/>
-            <input type = "text" class = "text7" value="Сир"disabled/>
+<body>
+<div class="main_container">
+    <div class="left_container">
+        <div class="inner">
+            <div class="input-holder">
+                <input class="input-text" type="text" placeholder="Назва товару">
+                <button class="button-add my-button" type="button">Додати</button>
+            </div>
+            <div class="item" data-class="edit-mode">
+                <div class="item-name">
+                    Помідори
+                </div><div class="item-center-buttons">
+               <span class = "tooltip" data-tooltip="Зменшити">
+                   <button class="button-minus my-button round-button"  type="button">−</button>
+               </span>
+                <span class = "tooltip" data-tooltip="Кількість">
+                <span class = "text">1 </span>
+                </span>
+                <span class = "tooltip" data-tooltip="Збільшити">
+                <button class="button-plus my-button round-button" type="button">+</button>
+                </span>
+            </div><div class="item-right-buttons">
+                <button class="button-bought my-button" type="button">Куплено</button>
+                <span class = "tooltip" data-tooltip="Видалити">
+                <button class="button-delete my-button" type="button">×</button>
+                </span>
+            </div>
+            </div>
+            <div class="item" data-class="edit-mode">
+                <div class="item-name">
+                    Печиво
+                </div><div class="item-center-buttons">
+               <span class = "tooltip" data-tooltip="Зменшити">
+                   <button class="button-minus my-button round-button"  type="button">−</button>
+               </span>
+                <span class = "tooltip" data-tooltip="Кількість">
+                <span class = "text">1 </span>
+                </span>
+                <span class = "tooltip" data-tooltip="Збільшити">
+                <button class="button-plus my-button round-button" type="button">+</button>
+                </span>
+            </div><div class="item-right-buttons">
+                <button class="button-bought my-button" type="button">Куплено</button>
+                <span class = "tooltip" data-tooltip="Видалити">
+                <button class="button-delete my-button" type="button">×</button>
+                </span>
+            </div>
+            </div>
+            <div class="item" data-class="edit-mode">
+                <div class="item-name">
+                    Сир
+                </div><div class="item-center-buttons">
+               <span class = "tooltip" data-tooltip="Зменшити">
+                   <button class="button-minus my-button round-button"  type="button">−</button>
+               </span>
+                <span class = "tooltip" data-tooltip="Кількість">
+                <span class = "text">1 </span>
+                </span>
+                <span class = "tooltip" data-tooltip="Збільшити">
+                <button class="button-plus my-button round-button" type="button">+</button>
+                </span>
+            </div><div class="item-right-buttons">
+                <button class="button-bought my-button" type="button">Куплено</button>
+                <span class = "tooltip" data-tooltip="Видалити">
+                <button class="button-delete my-button" type="button">×</button>
+                </span>
+            </div>
+            </div>
+
         </div>
-        <p class="style1">Куплено</p>
+    </div>
+    <div class="right_container">
+        <div class="inner">
+            <div class="how-many-left">
+                <h3>Залишилося</h3>
+            </div>
+            <div class="items-list">
+                <div class="item-not-bought">
+                    <span>
+                    <span class="label">Помідори</span>
+                    <span class="orange-circle">1</span>
+                    </span>
+                </div>
+                <div class="item-not-bought">
+                    <span class="label">Печиво</span>
+                    <span class="orange-circle">1</span>
+                </div>
+                <div class="item-not-bought">
+                    <span class="label">Сир</span>
+                    <span class="orange-circle">1</span>
+                </div>
+            </div>
+            <div class="bought-items">
+                <h3>Куплено</h3>
+            </div>
+            <div class="empty">
+            </div>
+        </div>
     </div>
 
-</div>
-<div   class="left">
-    <input type= "text" class = "text1" placeholder = " Назва товару"/>
-    <button type = "button" class="button1"> Додати </button>
-    <span>
-            Помідори
-                <button type = "button" class="button2" > - </button>
-                <input type = "text" class = "text2" value="1" disabled/>
-                <button type = "button" class="button3" > + </button>
-                <button type = "button" class="button4" >  Куплено </button>
-                <button type = "button" class="button5" > × </button>
-            </span>
-    <span>
-            Печиво
-                <button type = "button" class="button6" > - </button>
-                <input type = "text" class = "text3" value="1"disabled/>
-                <button type = "button" class="button7" > + </button>
-                <button type = "button" class="button8" >  Куплено </button>
-                <button type = "button" class="button9" > × </button>
-            </span>
-    <span>
-            Сир
-                <button type = "button" class="button10" > - </button>
-                <input type = "text" class = "text4" value="1"disabled/>
-                <button type = "button" class="button11" > + </button>
-                <button type = "button" class="button12" >  Куплено </button>
-                <button type = "button" class="button13" > × </button>
-            </span>
-</div>
+    <div class="badge">
+        <div class="b-title">
+            Buy List
+        </div>
+        <div class="b-text">
+            Created by:
+            <div>Anya Saliy</div>
+        </div>
+    </div>
 </div>
 </body>
 </html>

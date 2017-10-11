@@ -1,112 +1,70 @@
+
 <!DOCTYPE html>
 <html>
 <head lang="uk">
     <meta charset="UTF-8">
-    <title>Buy List</title>
-
-
+    <title>My Buy list</title>
     <link rel="stylesheet" type="text/css" href="main.css"/>
 </head>
 <body>
-<div class="main_container">
-    <div class="left_container">
+<div class="container">
+    <div class="left-side">
         <div class="inner">
             <div class="input-holder">
-                <input class="input-text" type="text" placeholder="Назва товару">
+                <input class="input-text" maxlength="27" type="text" placeholder="Назва товару">
                 <button class="button-add my-button" type="button">Додати</button>
             </div>
-            <div class="item" data-class="edit-mode">
-                <div class="item-name">
-                    Помідори
-                </div><div class="item-center-buttons">
-               <span class = "tooltip" data-tooltip="Зменшити">
-                   <button class="button-minus my-button round-button"  type="button">−</button>
-               </span>
-                <span class = "tooltip" data-tooltip="Кількість">
-                <span class = "text">1 </span>
-                </span>
-                <span class = "tooltip" data-tooltip="Збільшити">
-                <button class="button-plus my-button round-button" type="button">+</button>
-                </span>
-            </div><div class="item-right-buttons">
-                <button class="button-bought my-button" type="button">Куплено</button>
-                <span class = "tooltip" data-tooltip="Видалити">
-                <button class="button-delete my-button" type="button">×</button>
-                </span>
-            </div>
-            </div>
-            <div class="item" data-class="edit-mode">
-                <div class="item-name">
-                    Печиво
-                </div><div class="item-center-buttons">
-               <span class = "tooltip" data-tooltip="Зменшити">
-                   <button class="button-minus my-button round-button"  type="button">−</button>
-               </span>
-                <span class = "tooltip" data-tooltip="Кількість">
-                <span class = "text">1 </span>
-                </span>
-                <span class = "tooltip" data-tooltip="Збільшити">
-                <button class="button-plus my-button round-button" type="button">+</button>
-                </span>
-            </div><div class="item-right-buttons">
-                <button class="button-bought my-button" type="button">Куплено</button>
-                <span class = "tooltip" data-tooltip="Видалити">
-                <button class="button-delete my-button" type="button">×</button>
-                </span>
-            </div>
-            </div>
-            <div class="item" data-class="edit-mode">
-                <div class="item-name">
-                    Сир
-                </div><div class="item-center-buttons">
-               <span class = "tooltip" data-tooltip="Зменшити">
-                   <button class="button-minus my-button round-button"  type="button">−</button>
-               </span>
-                <span class = "tooltip" data-tooltip="Кількість">
-                <span class = "text">1 </span>
-                </span>
-                <span class = "tooltip" data-tooltip="Збільшити">
-                <button class="button-plus my-button round-button" type="button">+</button>
-                </span>
-            </div><div class="item-right-buttons">
-                <button class="button-bought my-button" type="button">Куплено</button>
-                <span class = "tooltip" data-tooltip="Видалити">
-                <button class="button-delete my-button" type="button">×</button>
-                </span>
-            </div>
-            </div>
+
+            <template id="item-temp">
+                <div class="item" data-class="edit-mode">
+                    <div class = item-name>
+                        <div class="item-name-2">
+                            Помідори
+                        </div>
+                        <input class="edit" maxlength="27" style="display: none">
+                    </div>
+                    <div class="item-center-buttons">
+                        <span class="tooltip" data-tooltip="Зменшити"><button
+                                class="button-minus my-button round-button" type="button">−</button></span>
+                        <span class="label-count">1</span>
+                        <span class="tooltip" data-tooltip="Збільшити"><button
+                                class="button-plus my-button round-button" type="button">+</button></span>
+                    </div>
+                    <div class="item-right-buttons">
+                        <button class="button-bought my-button" type="button">Куплено</button>
+                        <button class="button-un-bought my-button" type="button">Некуплено</button>
+                        <span class="tooltip" data-tooltip="Видалити">
+                            <button class="button-delete my-button"
+                                    type="button">&#10006</button>
+                        </span>
+                    </div>
+                </div>
+            </template>
 
         </div>
     </div>
-    <div class="right_container">
-        <div class="inner">
+
+    <div class="right-side">
+        <div class="inner-right">
             <div class="how-many-left">
-                <h3>Залишилося</h3>
+                Залишилося
             </div>
             <div class="items-list">
-                <div class="item-not-bought">
-                    <span>
-                    <span class="label">Помідори</span>
-                    <span class="orange-circle">1</span>
+                <template id="item-temp-right">
+                    <div class="item-not-bought">
+                    <span class="mini-label">
+                        <span class="label">Помідори</span>
+                        <span class="orange-circle">1</span>
                     </span>
-                </div>
-                <div class="item-not-bought">
-                    <span class="label">Печиво</span>
-                    <span class="orange-circle">1</span>
-                </div>
-                <div class="item-not-bought">
-                    <span class="label">Сир</span>
-                    <span class="orange-circle">1</span>
-                </div>
+                    </div>
+                </template>
             </div>
             <div class="bought-items">
-                <h3>Куплено</h3>
+                Куплено
             </div>
-            <div class="empty">
-            </div>
+            <div class="what-was-bought"></div>
         </div>
     </div>
-
     <div class="badge">
         <div class="b-title">
             Buy List
@@ -117,6 +75,8 @@
         </div>
     </div>
 </div>
+<script	type="text/javascript" src="jquery-3.2.1.js">	</script>
+<script	type="text/javascript" src="main.js">	</script>
 </body>
 </html>
 

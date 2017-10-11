@@ -1,28 +1,28 @@
 body {
     margin: 0;
     background: lightgrey;
-    font-family: Lato, Arial, sans-serif;
-
+    font-family: Lato, Arial, sans-serif;;
+    font-size: 0;
 }
 
-.main_container {
+.container {
     display: block;
     max-width: 1100px;
     min-width: 500px;
     padding-top: 100px;
-    margin:auto;
+    margin: auto;
 }
 
-.right_container {
+.right-side {
     box-sizing: border-box;
-    width: 40%;
+    width: 35%;
     float: right;
     padding: 10px;
 }
 
-.left_container {
+.left-side {
     box-sizing: border-box;
-    width: 60%;
+    width: 65%;
     float: left;
     padding: 10px;
     box-shadow: aliceblue;
@@ -41,9 +41,17 @@ body {
     box-shadow: antiquewhite;
 }
 
+.inner-right {
+    background: white;
+    border-radius: 4px;
+    box-shadow: antiquewhite;
+}
+
 .input-holder {
     padding: 10px;
 }
+
+
 
 .input-text {
     display: inline-block;
@@ -52,16 +60,11 @@ body {
     padding: 9px;
 }
 
-.text{
-    background: lightgrey;
-    text-align: center;
-    padding:5px 10px 5px 10px;
-    position:relative;
-    display:inline-block;
-    border-radius:5px;
-    box-sizing: border-box;
+.edit {
+    width: 100px;
+    display: inline-block;
+    padding: 4px;
 }
-
 .item {
     border-top: 1px solid rgb(111, 111, 111);
     border-bottom: 1px rosybrown;
@@ -72,6 +75,10 @@ body {
     box-sizing: border-box;
     width: 25%;
     display: inline-block;
+}
+
+.item-name-2 {
+    font-size: 15px;
     text-align: left;
 }
 
@@ -95,7 +102,7 @@ body {
     border-radius: 3px;
     cursor: pointer;
     outline: none;
-    box-shadow: 0 -0.25em 0 0 rgba(34,36,38, .15) inset;
+    box-shadow: 0 -0.25em 0 0 rgba(34, 36, 38, .15) inset;
     position: relative;
     border: none;
     text-align: center;
@@ -112,14 +119,14 @@ body {
 .button-add {
     display: inline-block;
     box-sizing: border-box;
-    color:white;
-    font-weight: 700;
     width: 20%;
+    border: 0px;
     background: #2185D0;
-    border-bottom-left-radius: 0px;
     border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
     padding: 11px;
-    float:right;
+    color: white;
+    font-weight: 700;
 }
 
 .round-button {
@@ -127,23 +134,57 @@ body {
     width: 30px;
     border-radius: 50%;
     color: white;
-    font-weight: 700;
+    font-weight: 800;
+
 }
 
 .button-minus {
     background: red;
 }
 
-.button-plus{
+.label-count {
+    background-color: #E8E8E8;
+    display: inline-block;
+    color: black;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    font-size: 13px;
+}
+
+.button-plus {
     background: green;
 }
 
-.button-bought{
+.button-bought {
     background: #e6e6e6;
     padding: 10px 20px 10px 20px;
 }
 
-.button-delete{
+.item .button-un-bought {
+    background: #e6e6e6;
+    padding: 10px 20px 10px 20px;
+    display: none;
+}
+
+.item.is-bought .button-un-bought {
+    display: inline;
+}
+
+.item.is-bought .button-bought, .item.is-bought .button-delete, .item.is-bought .button-minus, .item.is-bought .button-plus{
+    display: none;
+}
+
+.item.is-bought .item-name{
+    text-decoration: line-through;
+}
+
+.bought .label, .bought .orange-circle{
+    text-decoration: line-through;
+}
+
+.button-delete {
     background: #ce0000;
     border: none;
     color: white;
@@ -152,7 +193,61 @@ body {
     margin-left: 3px;
     border-radius: 3px;
     padding: 5px 10px 5px 10px;
-    font-weight:700;
+}
+
+.how-many-left {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.items-list {
+    border-top: 1px solid rgb(111, 111, 111);
+    padding: 10px;
+}
+.what-was-bought {
+    border-top: 1px solid rgb(111, 111, 111);
+    padding: 10px;
+}
+
+.bought-items {
+    border-top: 1px solid rgb(111, 111, 111);
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.empty {
+    border-top: 1px solid rgb(111, 111, 111);
+    padding: 10px;
+}
+
+.item-not-bought {
+    display: inline-block;
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 3px;
+    background: #eaeaea;
+    font-size: small;
+    margin: 2px;
+}
+
+.orange-circle {
+    color: white;
+    display: inline-block;
+    border-radius: 50%;
+    background: #F2711C;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+.label {
+    display: inline-block;
 }
 
 .badge {
@@ -183,124 +278,54 @@ body {
     font-weight: 600;
 }
 
-
 .badge:hover {
     transform: translateY(-70px);
     background: rebeccapurple;
 }
 
-
-.how-many-left
-{
-    padding: 10px;
-}
-
-.items-list
-{
-    border-top: 1px solid rgb(111, 111, 111);
-    padding: 10px;
-}
-
-.bought-items
-{
-    border-top: 1px solid rgb(111, 111, 111);
-    padding: 10px;
-}
-
-.empty
-{
-    border-top: 1px solid rgb(111, 111, 111);
-    padding: 10px;
-}
-
-.item-not-bought
-{
-    display: inline-block;
-    padding: 5px 7px 5px 7px;
-    border-radius: 3px;
-    background: #eaeaea;
-    font-size: small;
-    margin: 2px;
-}
-
-.orange-circle {
-    color: white;
-    display: inline-block;
-    padding:5px;
-    box-sizing: border-box;
-    border-radius: 50%;
-    background: orangered;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    font-size: 10px;
-}
-
-.label
-{
-    display: inline-block;
-}
-.one
-{
-    max-width: 1100px;
-    min-width: 900px;
-    padding: 5px 10px 5px 10px;
-    display: block;
-    color: black;
-    font-size: small;
-    width: 5px !important;
-    height: 5px !important;
-    line-height: 1;
-    vertical-align: baseline;
-    margin: 0 .14285714em;
-    background-color: white;
-    color: rgba(0,0,0,.6);
-    text-transform: none;
-    font-weight: 700;
-    border: 0 solid transparent;
-    border-radius: 3px;
-
-}
-
 @media (max-width: 500px) {
-    .left_container {
+    .left-side {
         width: 100%;
     }
 
-    .right_container {
+    .right-side {
         width: 100%;
     }
 }
 
-@media print{
+@media print {
     .b-title {
         display: none;
     }
 
-   .badge{
-       border:solid 1px purple;
-       color:black;
-   }
+    .badge {
+        color: black;
+        border: 1px solid blueviolet;
+    }
 }
 
-.tooltip{
+.tooltip {
     border-bottom: 1px;
-    transition: all 0.00001s ease;
 }
+
 .tooltip::after {
     background: purple;
-    border-radius: 8px 8px 8px 8px;
+    border-radius: 8px;
     color: white;
+    font-size: small;
     content: attr(data-tooltip);
     margin-top: -25px;
-    margin-left: -60px;
+    margin-left: -38px;
     padding: 3px 7px 3px 7px;
     position: absolute;
     visibility: hidden;
+    transition:all 0.4s ease;
+
 }
 
 .tooltip:hover::after {
     opacity: 1;
     visibility: visible;
-    transform: translateY(-2px);
+    transform: translateY(-15px);
+    transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
